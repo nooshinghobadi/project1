@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{%block title>%} info page {%endblock%}
+
+{%block body%}
+
+       {% for personalinfo in info %}
+       <a href="/info/detail/{{ personalinfo.id }}">{{personalinfo.name}}</a><br/>
+       {% endfor %}
+       
+{%endblock%}
